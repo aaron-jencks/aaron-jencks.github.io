@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/images/profile.jpg" alt="Profile picture" style="width:200px;">
+<img src="/assets/images/profile.jpg" alt="Profile picture" style="float: left; margin: 0 0 10px 10px; width:200px;">
 
 I'm a Computer Science graduate student at The Ohio State University with research interests spanning natural language processing, computational theory, and systems optimization. My work often explores how phonetic representations can improve AI models for low-resource languages, including custom GPT training on International Phonetic Alphabet (IPA) data.
 
