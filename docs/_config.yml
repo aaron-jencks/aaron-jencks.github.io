@@ -23,8 +23,7 @@ email: aaronjencks@gmail.com
 description: "Hello, I'm Aaron, I'm a computer science major at The Ohio State University. I study Natural Language Processing (NLP) and System's Security."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  aaron-jencks
 
 minima:
   skin: dark
