@@ -30,7 +30,7 @@ markdown: GFM
 
 # Build settings
 remote_theme: pages-themes/midnight@v0.2.0
-theme: pages-themes/midnight@v0.2.0
+theme: midnight@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
