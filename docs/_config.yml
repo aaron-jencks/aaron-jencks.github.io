@@ -20,8 +20,7 @@
 
 title: Aaron Jencks
 email: aaronjencks@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hello, I'm Aaron, I'm a computer science major at The Ohio State University. I study Natural Language Processing (NLP) and System's Security.
+description: "Hello, I'm Aaron, I'm a computer science major at The Ohio State University. I study Natural Language Processing (NLP) and System's Security."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
