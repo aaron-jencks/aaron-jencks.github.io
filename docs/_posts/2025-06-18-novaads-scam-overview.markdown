@@ -52,7 +52,7 @@ This is the interesting one, this is an MD5 hash of a certain struct this struct
 Where:
 * `user_id`: is the database id assigned to each user, for registering a user, or logging in, you use 1052
 * `timestamp`: the seconds since epoch of the request
-* `**payload`: the rest of the payload contents
+* `// the rest of the payload`: the rest of the payload contents
 
 To compute the `Sign` field you then generate a query string, in sorted alphabetical order, using all of the keys and values, excluding any with empty values. It should fit something using this: `k_1=v_1&k_2=v_2&...&k_n=v_n`. In python the code for this looks something like this:
 ```python
