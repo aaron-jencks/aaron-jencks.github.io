@@ -10,7 +10,7 @@ Recently I was contacted by a person via WhatsApp about a job opportunity. They 
 
 The salary structure is a bit confusing, but basically the more days in a row that you complete:
 
-<img src="/assets/images/novaads-salary-structure.jpeg" alt="NovaAds Salary Structure">
+<img src="/assets/images/novaads-salary-structure.jpeg" alt="NovaAds Salary Structure" style="width: 200px">
 
 In addition to this you would also make a commission based on the value of the product that you review. Typically it's only a couple of dollars. The way that the job works is that they have a website that you go to along with a page that you click on to receive products to review. The next red flag comes in the fact that you have to pony up your own money in order to review a product. What this means, is that say you have a radio that would cost $25 on Amazon, to review it, you'd have to pay $25 from your account on the website and then when the review goes through you'll get your money back along with a commission (this is another red flag).
 
