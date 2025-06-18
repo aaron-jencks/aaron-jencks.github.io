@@ -4,7 +4,7 @@ title:  "NovaAds Scam Overview"
 date:   2025-06-18 18:01:00 -0400
 categories: jekyll update
 ---
-<img src="/assets/images/novaads-logo.png" alt="NovaAds Logo" style="height: 200px">
+<img src="/assets/images/novaads-logo.png" alt="NovaAds Logo" style="float: right; height: 200px">
 
 # Scam Overview
 
