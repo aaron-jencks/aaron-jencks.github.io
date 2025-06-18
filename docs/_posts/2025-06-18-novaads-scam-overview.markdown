@@ -18,6 +18,8 @@ In addition to this you would also make a commission based on the value of the p
 
 Typically they offer you tasks in batches of 45, you do two batches a day. In each batch there can be 0-3 of these special "combination" tasks. This is the hook of the scam. Whenever you click on the button to do a task, the amount of the product is deducted from your account without checking the balance first and if you don't have the money to pay it, then your account is frozen until you deposit more money into a crypo wallet (another red flag) to replenish it (another red flag). A "combination" task basically guarantees that your account will be frozen by selecting an item that costs hundreds of dollars and then automatically assigns multiple tasks to you at once (hence the term combination). These tasks then come with the added bonus of having an increased commission.
 
+<img src="/assets/images/novaads-orders-page.jpeg" alt="NovaAds Orders Page" style="float: right; width: 200px">
+
 It can be assumed that once you get a comination tasks that you'll never see that money again. Also there's a little niche in the terms of service that indicates that to withdrawal more than $100k from your account you need to first deposit 10% of the value. I'm sure that there's also no guarantee that if you withdraw any money that you'll actually receive it. Anyway, if you want, here's a full description of the scam in their [Terms and Conditions](https://www.novaads.life/#/tac)
 
 # API
