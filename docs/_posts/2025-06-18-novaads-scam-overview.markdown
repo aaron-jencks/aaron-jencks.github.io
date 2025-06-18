@@ -24,11 +24,11 @@ Since I was fairly certain this was a scam and had no intention of actually doin
 
 The base URL for all of their API calls is `https://api.bloomingdales1.cfd`. All of the requests take the form of `{base}/api/{path}?lang={lang_code}`. `lang_code` is almost always `en-us`. 
 
-## Headers
+### Headers
 
 Each `POST` request requires certain headers. Namely an `Authorization` and a `Sign` field. I'll cover how to retrieve those now:
 
-### Authorization
+#### Authorization
 
 The authorization field is a unique key assigned to each account, it's generated upon registration, when registering a new user, and when logging in, it's a hardcoded value:
 ```
@@ -36,7 +36,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvcmRlckFkbWluIiwiYXVkIjoiYXNlIiw
 ```
 Otherwise you can find it by pinging the `index` endpoint and extracting it.
 
-### Sign
+#### Sign
 
 This is the interesting one, this is an MD5 hash of a certain struct this struct looks like the following:
 ```json
@@ -71,7 +71,7 @@ def generate_sign(data: dict, user_id: str, timestamp: int) -> str:
     return hashlib.md5(sorted_str.encode()).hexdigest()
 ```
 
-### All Together
+#### All Together
 
 This is the code I used to post to an arbitrary endpoint in the novaads website:
 
@@ -117,15 +117,15 @@ def post_payload(path: str, payload: dict):
     return requests.post(url, json=payload, headers=headers)
 ```
 
-### Handling Responses
+#### Handling Responses
 
 This is interesting. The site uses 2 different hosting services, the site goes through a relay, and also hosts on itself. This means something interesting. The relay actually responds with its own HTTP codes. So, even if the response code is non erroneous, the post may not have been accepted. There is a `code` in the json of the response as well. That said sometimes the response is garbled up with additional information. Sometimes I would see responses that looked something like `Error: operation timed out after 2000ms...{"code": 200, ...}`. So to recap, you have to be able to check for errors from both the relay, and the server. Sometimes the response will be json and sometimes it won't, sometimes the outer response code will be 200 and the actual request failed, the error handling is a bit complex.
 
-### Rate Limits
+#### Rate Limits
 
 As far as I can tell the rate limit is 1.12-1.20 seconds/request. I've found this experimentally. The system doesn't use request quotas or anything. The server initially let me send requests in the 10s-100s of requests/second, but once they detected that I was going too fast they throttled the requests to 1.12 seconds/request. Your experience might vary.
 
-## Registering a User
+### Registering a User
 
 To register a user is pretty simple, but I want to cover the constraints (or lack thereof) of the field lengths and contents. To register a user you must construct a dictionary of the following:
 ```json
@@ -156,7 +156,7 @@ Lets go over what each field must contain:
 
 To register the user you simply `POST` to the `register` endpoint and follow the guide above.
 
-## Logging In
+### Logging In
 
 Logging in is actually super simple. I used this endpoint to test and find the length constraints of the fields in the registration process. It contains a payload of the following:
 ```json
