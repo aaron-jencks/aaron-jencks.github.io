@@ -4,6 +4,8 @@ title:  "NovaAds Scam Overview"
 date:   2025-06-18 18:01:00 -0400
 categories: jekyll update
 ---
+<img src="/assets/images/novaads-logo.png" alt="NovaAds Logo">
+
 # Scam Overview
 
 Recently I was contacted by a person via WhatsApp about a job opportunity. They indicated that it was an online job opportunity that pays between $100 and $400 a day and offers flexible hours. They claimed that they represent a digital marketing company called NovaAds. They make money by boosting the sales of small businesses by falsifying ratings and reviews (this is a red flag). They explain that last part in much more vague detail, but at the end of the day, it's what they're doing.
