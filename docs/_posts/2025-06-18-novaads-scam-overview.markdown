@@ -76,7 +76,6 @@ def generate_sign(data: dict, user_id: str, timestamp: int) -> str:
 This is the code I used to post to an arbitrary endpoint in the novaads website:
 
 ```python
-# === Configuration ===
 API_BASE = "https://api.bloomingdales1.cfd"
 SECRET = "f2qRGEOps0gms562N7V60B1SVJyrmNVDCsaddGS"
 LANG = "en-us"
