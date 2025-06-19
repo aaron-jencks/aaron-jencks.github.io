@@ -171,6 +171,14 @@ Logging in is actually super simple. I used this endpoint to test and find the l
 ```
 You just `POST` this payload to the `login` endpoint and follow the guide above.
 
+### Other Endpoints
+
+As far as I can tell there are a couple other endpoints as well
+
+* `index`: `GET` fetches the site's information for the homepage, I suspect the user information is here as well
+* `logo`: `GET` not sure
+* `commit`: `POST` submits and order along with a rating and a comment, uses the serial number from the order page to ensure that the order exists. I don't know the constraints for this one, I also don't remember the endpoint for fetching a new order. As far as I can tell the order and and submission endpoints aren't penetratable, there are keys linking each one to users and the determination of whether a compound or normal task is returned is determined by the server and not the client (boo... :/). Anyway I didn't really do a whole lot of research into these endpoints, so I can't reliably document them here.
+
 # Conclusions
 
 This is highly suspicious as a scam, there are several red flags in the overview of the structure of the system. Also several typos throughout the website (another red flag). But I'd avoid putting any money into this and keep your distance. If you do end up getting an invite code, go ahead and send it to me so that I can continue playing around :)
