@@ -48,3 +48,5 @@ Predicted solving time for a grid of area 15,250 (250, 61). We then fit another 
 # Conclusion
 
 To solve the grid that I set out for, I've determined that it was infeasible to continue. :(
+
+Anyway you can find the code I used here: https://github.com/aaron-jencks/reverse-life
