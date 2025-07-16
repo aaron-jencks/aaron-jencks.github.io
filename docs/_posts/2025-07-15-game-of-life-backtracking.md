@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Game of Life Backtracking"
-date:   2025-07-15 23:56:00 -0400
+date:   2025-07-15 23:59:00 -0400
 categories: jekyll update
 ---
 
@@ -49,4 +49,4 @@ Predicted solving time for a grid of area 15,250 (250, 61). We then fit another 
 
 To solve the grid that I set out for, I've determined that it was infeasible to continue. :(
 
-Anyway you can find the code I used here: https://github.com/aaron-jencks/reverse-life
+Anyway you can find the code I used here: [https://github.com/aaron-jencks/reverse-life](https://github.com/aaron-jencks/reverse-life)
