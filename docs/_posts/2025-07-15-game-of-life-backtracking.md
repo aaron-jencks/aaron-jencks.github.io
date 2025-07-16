@@ -27,21 +27,21 @@ I learned that the solving time scales exponentially, so I created a simple scri
 
 # Results
 
-| Grid Size | 1 Frame | 2 Frames | 3 Frames | 4 Frames |
-| --------- | ------- | -------- | -------- | -------- |
-| 15        | 0.83    | 6.32     | 84.887   | 748.842  |
-| 20        | 1.579   | 6.817    | 60.417   | 646.375  |
-| 50        | 23.479  | 54.895   | 7299.086 | DNF      |
-| 100       | 70.023  | DNF      | DNF      | DNF      |
-| 200       | 195.215 | DNF      | DNF      | DNF      |
+| Grid Size | 1 Frame | 2 Frames  | 3 Frames | 4 Frames |
+| --------- | ------- | --------- | -------- | -------- |
+| 15        | 0.83    | 6.32      | 84.887   | 748.842  |
+| 20        | 1.579   | 6.817     | 60.417   | 646.375  |
+| 50        | 23.479  | 54.895    | 7299.086 | DNF      |
+| 100       | 70.023  | 13232.534 | DNF      | DNF      |
+| 200       | 195.215 | DNF       | DNF      | DNF      |
 
 The target was to predict the solving time for a sample grid of size (250, 61) for 10 frames. To do this we solve using log-linear regression in 2 phases. We also consider the area of the grid being solved instead of the grid size, since testing was only done on square grids. The first phase of regression, we solve for solving time of the (250, 61) size grid for 1, 2, and 3 frames. We excluded 4 frames, because there isn't enough data to show an exponential curve. This results in:
 
-| 1 Frame | 2 Frames  | 3 Frames   |
-| ------- | --------- | ---------- |
-| 22.0136 | 1.25837e7 | 2.81198e15 |
+| 1 Frame | 2 Frames | 3 Frames  |
+| ------- | -------- | --------- |
+| 22.0136 | 8.5130e5 | 2.8120e11 |
 
-Predicted solving time for a grid of area 15,250 (250, 61). We then fit another exponential regression to solve for 10 frames, we find this to be `y = 7.203e-07 * e^(1.624e+01 * x)`. This results in a predicted solving time of 2.44975e64 seconds or 7.7681e56 years
+Predicted solving time for a grid of area 15,250 (250, 61). We then fit another exponential regression to solve for 10 frames, we find this to be `y = 2.935e-07 * e^(1.624e+01 * x)` with a R^2 score of (0.9609). This results in a predicted solving time of 9.9819e63 seconds or 3.1652e56 years
 
 ![solving time](/assets/images/gol-solving-time.png)
 
