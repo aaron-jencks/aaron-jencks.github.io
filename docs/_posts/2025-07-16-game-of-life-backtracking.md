@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Game of Life Backtracking"
-date:   2025-07-15 23:59:00 -0400
+date:   2025-07-16 00:34:00 -0400
 categories: jekyll update
 ---
 
@@ -26,6 +26,8 @@ Setting up the constraints essentially consisted of using the Conjunctive Normal
 I learned that the solving time scales exponentially, so I created a simple script to characterize this. The results I present below show my findings.
 
 # Results
+
+The table below shows how grid size and number of frames affects solving time. Solving time is represented in seconds.
 
 | Grid Size | 1 Frame | 2 Frames  | 3 Frames | 4 Frames |
 | --------- | ------- | --------- | -------- | -------- |
