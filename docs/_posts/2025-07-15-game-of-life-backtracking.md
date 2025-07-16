@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Game of Life Backtracking"
-date:   2025-07-15 16:45:00 -0400
+date:   2025-07-15 23:53:00 -0400
 categories: jekyll update
 ---
 
